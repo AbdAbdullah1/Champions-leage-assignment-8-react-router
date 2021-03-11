@@ -1,19 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
-const League = (props) => {
-    const [leagues, setLeauges] = useState([])
-    
-    useEffect(()=> {
-        fetch('https://www.thesportsdb.com/api/v1/json/1/all_leagues.php')
-        .then(res => res.json())
-        .then(data => setLeauges(data.leagues))
-        console.log(leagues);
-    }, )
+const League = () => {
     return (
         <div>
-         <h1>Champions League</h1>
-         <h1>leagues: {leagues.length}   </h1>
-         <p>id {leagues.idLeague} </p>
+            <h1>leage file </h1>
         </div>
     );
 };
